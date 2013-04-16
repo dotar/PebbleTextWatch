@@ -2,42 +2,42 @@
 #include "string.h"
 
 static const char* const ONES[] = {
-  "o'clock",
-  "one",
-  "two",
-  "three",
-  "four",
-  "five",
-  "six",
-  "seven",
-  "eight",
-  "nine"
+  "prick",
+  "ett",
+  "två",
+  "tre",
+  "fyra",
+  "fem",
+  "sex",
+  "sju",
+  "åtta",
+  "nio"
 };
 
 static const char* const TEENS[] ={
   "",
-  "eleven",
-  "twelve",
-  "thirteen",
-  "fourteen",
-  "fifteen",
-  "sixteen",
-  "seventeen",
-  "eightteen",
-  "nineteen"
+  "elva",
+  "tolv",
+  "tretton",
+  "fjorton",
+  "femton",
+  "sexton",
+  "sjutton",
+  "arton",
+  "nitton"
 };
 
 static const char* const TENS[] = {
   "",
-  "ten",
-  "twenty",
-  "thirty",
-  "forty",
-  "fifty",
-  "sixty",
-  "seventy",
-  "eighty",
-  "ninety"
+  "tio",
+  "tjugo",
+  "trettio",
+  "fyrtio",
+  "femtio",
+  "sextio",
+  "sjuttio",
+  "åttio",
+  "nittio"
 };
 
 static size_t append_number(char* words, int num) {
@@ -115,7 +115,7 @@ void time_to_3words(int hours, int minutes, char *line1, char *line2, char *line
 	
 	// Truncate long teen values
 	if (strlen(line2) > 7) {
-		char *pch = strstr(line2, "teen");
+		char *pch = strstr(line2, "ton");
 		if (pch) {
 			memcpy(line3, pch, 4);
 			pch[0] = 0;
