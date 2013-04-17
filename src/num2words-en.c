@@ -15,7 +15,7 @@ static const char* const ONES[] = {
 };
 
 static const char* const TEENS[] ={
-  "",
+  "noll",
   "elva",
   "tolv",
   "tretton",
@@ -28,7 +28,7 @@ static const char* const TEENS[] ={
 };
 
 static const char* const TENS[] = {
-  "",
+  "noll",
   "tio",
   "tjugo",
   "trettio",
