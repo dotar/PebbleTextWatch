@@ -11,7 +11,6 @@
 PBL_APP_INFO(MY_UUID,
              "TextWatchSwe", "Wip Interactive/dotar",
              1, 0,
-             #DEFAULT_MENU_ICON,
              RESOURCE_ID_IMAGE_MENU_ICON,
 #if DEBUG
              APP_INFO_STANDARD_APP
