@@ -3,15 +3,15 @@
 
 static const char* const ONES[] = {
   "prick",
-  "ett",
-  "två",
-  "tre",
-  "fyra",
-  "fem",
-  "sex",
-  "sju",
-  "åtta",
-  "nio"
+  "noll ett",
+  "noll två",
+  "noll tre",
+  "noll fyra",
+  "noll fem",
+  "noll sex",
+  "noll sju",
+  "noll åtta",
+  "noll nio"
 };
 
 static const char* const TEENS[] ={
