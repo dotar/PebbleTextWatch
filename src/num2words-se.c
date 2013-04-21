@@ -115,15 +115,11 @@ void time_to_3words(int hours, int minutes, char *line1, char *line2, char *line
 	}
 	
 	// Truncate long teen values
-        if (strstr(line2, "ton") != 0) {
-    if (!((strstr(line2, "tret") != 0) ||
-                (strstr(line2, "femt") != 0) ||
-                (strstr(line2, "sex") != 0))) {
-            char *pch = strstr(line2, "ton");
-            if (pch) {
-              memcpy(line3, pch, 4);
-              pch[0] = 0;
-            }
-          }       
-        }
-} 
+	if (strlen(line2) > 7) {
+		char *pch = strstr(line2, "teen");
+		if (pch) {
+			memcpy(line3, pch, 4);
+			pch[0] = 0;
+		}
+	}
+}
