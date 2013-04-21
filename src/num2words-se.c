@@ -62,7 +62,7 @@ static size_t append_number(char* words, int num) {
   
   if (ones_val < 10 && tens_val == 0) {
   	strcat(words, "noll ");
-  	len += 4;
+  	len += 5;
   }
 
   if (ones_val > 0 || num == 0) {
